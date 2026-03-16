@@ -47,6 +47,8 @@ class RequestData(BaseModel):
 @app.get("/")
 def root():
     return {"status": "API running"}
+def home():
+    return {"message": "Flood Prediction API running"}
 
 
 @app.post("/predict")
